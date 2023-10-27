@@ -1,9 +1,12 @@
 <?php
 /*
  * Checking phone and email duplicates for the business process designer
+ *
  * Variables must be added to the business process parameters:
  * Incoming_request
  * Outgoing_response
+ *
+ * Writes the minimum ID to the variable
  */
 $rootActivity = $this->GetRootActivity();
 $value = $rootActivity->GetVariable("Incoming_request");
